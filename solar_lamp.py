@@ -30,7 +30,7 @@ args = parser.parse_args()
 ########################################################################################
 
 sense = Senseable()
-sense.authenticate(username, password)
+sense.authenticate(args.username, args.password)
 sense.update_realtime()
 
 # initialize as intervals_for_average len with zeros
